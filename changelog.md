@@ -1,5 +1,14 @@
 ## Changelog
 
+### 4.12.4
+- Bugfix: Added a validateData function, to use Laravel's default Validator resolver to validate model being saved.
+
+### 4.12.3
+- Updated composer.json.
+
+### 4.12.2
+- Bugfix: Fix for SQL Server throws invalid column error on select list #460
+
 ### 4.12.1
 - Bugfix: Revert Merge #601 and adds back in select2 for filter booleans due to 3 needed options True, False, Both
 - Bugfix: Fix Js for non numeric ids
