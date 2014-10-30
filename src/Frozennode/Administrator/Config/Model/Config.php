@@ -361,9 +361,9 @@ class Config extends ConfigBase implements ConfigInterface {
             $validator = LValidator::make($data, $rules);
 
             //if the validator fails, kick back the errors
-            if ($this->validator->fails())
+            if ($validator->fails())
             {
-                return implode('. ', $this->validator->messages()->all());
+                return implode('. ', $validator->messages()->all());
             }
         }
 
